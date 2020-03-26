@@ -53,5 +53,9 @@ class Song
     m = name.gsub('.mp3', '').split(/\-/)
     s = self.create_by_name(x[1].strip)
     s.artist_name = m[0].strip
+    s
+  end
+  
+  def self.create_from_filename(name)
     
 end
